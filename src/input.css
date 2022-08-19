@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#home{
+    background-image: linear-gradient(rgba(13, 43, 70, 0.9), rgba(13, 43, 70, 0.9)),url(/src/images/herobg.jpg);
+    /* background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px; */
+
+}
