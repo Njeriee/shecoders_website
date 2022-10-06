@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
     <title>home</title>
   </head>
   <body>
@@ -45,7 +46,7 @@
     <section id="section_one" class="flex flex-col bg-white h-screen text-black">
       <div class="flex flex-col justify-center md:px-20">
         <div
-          class="grid md:px-60 md:grid-cols-3 md:gap-8 justify-items-center -mt-32"
+          class="md:grid hidden md:px-60 md:grid-cols-3 md:gap-8 justify-items-center -mt-32"
         >
           <div class="bg-blue-50 px-5 py-8  w-full text-center rounded-xl">
             <span class="material-symbols-outlined text-lime-400 text-8xl">
@@ -77,22 +78,18 @@
         <div class="flex md:flex-row py-10 pt-20 px-40 justify-center">
           <div class="basis-1/2 flex flex-col px-10 justify-center">
             <h1 class="font-bold text-5xl py-10 text-lime-400 leading-snug">
-              We educate young people about 
-              the infinite opportiunities
-              in the IT
-              sector
+              We connect and offer coding lessons to young students
+              
             </h1>
             <p class="text-2xl pb-5">
               We believe in our next generation to carry on and contribute to
               towards the technological evolution
             </p>
             <p class="leading-loose">
-              Children exposed to coding at an early stage tend to develop an
-              early interest in coding, enhance life skills such as critical
-              thinking and decision making and perform better in school. Our aim
-              is to bridge the gap which is the dissemination of Information
-              Technology education to schools and ensure intrested students have
-              a chance of acquiring these skills.
+              Our program coderafiki aims at at forming a network of after school
+              clubs made up of a partnership between students, volunteer high skilled 
+              developers and schools. The aim of this project is to bridge the gap which 
+              is the dissemination of Information Technology education to schools.
             </p>
           </div>
           <div class="basis-1/2 flex flex-col px-20  justify-center">
@@ -100,15 +97,15 @@
           </div>
         </div>
         <div class="py-10 flex flex-col justify-center">
-          <button class="text-center font-semibold md:text-xl border bg-lime-400 text-white rounded-full m-auto md:p-4 p-2 justify-center">Learn how you can help</button>
+          <button class="text-center font-semibold md:text-xl border bg-lime-400 text-white rounded-full m-auto md:p-4 p-2 justify-center">Learn more</button>
         </div>
       </div>
     </section>
-    <section id="section_two" class="h-100 flex flex-col px-40 pt-28 bg-white">
+    <section id="section_two" class="h-100 flex flex-col px-40 pt-28 bg-blue-50">
       <div class="flex flex-row ">
         <div class="basis-1/2 flex flex-col pr-5">
           <div class="pt-10">
-            <img class="" src="/src/images/girls_coding.jpeg" alt="girls_coding">
+            <img class="" src="/src/images/girls_coding2-removebg-preview.png" alt="girls_coding">
           </div>
           <!-- <div class="">
             <h1 class="text-6xl">150k</h1>
@@ -118,14 +115,24 @@
         <div class="basis-1/2 flex flex-col">
           <div class="">
             <h1 class="text-5xl text-lime-400 font-bold">How we are making <br> a diffrence</h1>
-            <p class="pt-10 text-2xl">
-              We are visionary, self-driven and goal- oriented 
-              set to transform our society through spreading awareness 
-              about information technology.
+            <p>
+              Kenya and Africa are still  significantly behind when it comes to awareness 
+              about the importance of IT and most importantly coding. 
+            </p>
+            <p class="pt-10"> 
+              A very small population in the continent is equipped with knowledge of coding 
+              and emerging technologies such as web3, blockchain, Artificial Intelligence 
+              and Virtual Reality work.Our aim is to change this by creating more awareness 
+              about the coding and opportiunities in the IT sector. Our target group is school
+              going children between the ages of 10-19 years.Studies have shown that teaching 
+              students how to code at an early stage is considered as one of the major keys to 
+              promoting engineering education in the future, which can potentially enhance the 
+              competency and computational skills of students to adhere better learning outcomes 
+              in higher education. 
             </p>
           </div>
           <div class="text-xl flex flex-col">
-            <p class="py-5">
+            <!-- <p class="py-5">
               <span class="material-symbols-outlined inline-flex text-5xl text-lime-400">
                 approval_delegation
               </span>Our aim is to reach every remote school in Kenya and establish after-school coding clubs
@@ -138,6 +145,9 @@
               code and acquire skills that will put them
               at a competitive advantage in the IT
               in future
+            </p> -->
+            <p>
+
             </p>
           </div>
           <div class="py-20 text-xl">
@@ -200,41 +210,153 @@
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <div>
-          <h1>Be an empowered developer</h1>
-          <p>
+    <section class="bg-blue-50 py-10 flex flex-col ">
+      <!-- <div class="flex flex-col py-10">
+        <h1>Gallery</h1>
+        <div class="grid grid-cols-3">
+          <div class="">
+            <img class="h-96" src="src/images/section1pic.jpeg" alt="">
+          </div>
+          <div>
+            <img class="h-96" src="src/images/section1pic2.jpeg" alt="">
+          </div>
+          <div>
+            <img class="h-96" src="src/images/gallery3.jpeg" alt="">
+          </div>
+        </div>
+      </div> -->
+      <!-- This is an example component -->
+      <div class="flex flex-row h-full" >
+        <div class="basis-1/2 px-40">
+          <h1 class="text-4xl font-bold text-lime-400 py-5">Be an empowered developer</h1>
+          <p class="pb-10 text-xl">
             Join a community of like minded individuals
             set to transform the community through code and help
             Africa attain the goal of 10 million plus developers
           </p>
         </div>
-        <div>
-          <p>
-            Become a <span>volunteer</span>
-          </p>
-          <button>Join Us</button>
+        <div class="basis-1/2 text-white">
+          <div class="w-96 h-full rounded-3xl flex flex-col justify-center" id="home">
+            <p class="text-xl pl-24 pt-20">
+              Become a <span class="text-lime-400">volunteer</span>
+            </p>
+            <button class="text-center my-10 bg-lime-400 text-white font-semibold md:text-xl border rounded-full m-auto md:p-4 p-2 justify-center">Join Us</button>
+          </div>
         </div>
       </div>
     </section>
     <footer class="bg-slate-800 text-white">
       <div class="flex flex-col">
         <div class="grid grid-cols-4">
-          <div>
-            <img class="h-24" src="/src/images/cropped-output-onlinepngtools-2048x1745.png" alt="">
+          <div class="relative p-8 sm:p-12 shadow-lg">
+            <img class="h-32 justify-center" src="/src/images/cropped-output-onlinepngtools-2048x1745.png" alt="">
           </div>
-          <div>
-            <h1>Contact Us</h1>
+          <div class=" relative rounded-lg p-8 sm:p-12 shadow-lg">
+            <h1 class="pb-4">Contact us</h1>
+            <form>
+              <div class="mb-6">
+                 <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="
+                    w-full
+                    rounded
+                    py-3
+                    px-[14px]
+                    text-body-color text-base
+                    border border-[f0f0f0]
+                    outline-none
+                    focus-visible:shadow-none
+                    focus:border-primary
+                    "
+                    />
+              </div>
+              <div class="mb-6">
+                 <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="
+                    w-full
+                    rounded
+                    py-3
+                    px-[14px]
+                    text-body-color text-base
+                    border border-[f0f0f0]
+                    outline-none
+                    focus-visible:shadow-none
+                    focus:border-primary
+                    "
+                    />
+              </div>
+              <div class="mb-6">
+                 <input
+                    type="text"
+                    placeholder="Your Phone"
+                    class="
+                    w-full
+                    rounded
+                    py-3
+                    px-[14px]
+                    text-body-color text-base
+                    border border-[f0f0f0]
+                    outline-none
+                    focus-visible:shadow-none
+                    focus:border-primary
+                    "
+                    />
+              </div>
+              <div class="mb-6">
+                 <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    class="
+                    w-full
+                    rounded
+                    py-3
+                    px-[14px]
+                    text-body-color text-base
+                    border border-[f0f0f0]
+                    resize-none
+                    outline-none
+                    focus-visible:shadow-none
+                    focus:border-primary
+                    "
+                    ></textarea>
+              </div>
+              <div>
+                 <button
+                    type="submit"
+                    class="
+                    text-lime-400
+                    bg-primary
+                    rounded
+                    border border-primary
+                    p-3
+                    transition
+                    hover:bg-opacity-90
+                    "
+                    >
+                 Send Message
+                 </button>
+              </div>
+           </form>
           </div>
-          <div>
-            <h1>Visit our socials</h1>
+          <div class="relative p-8 sm:p-12 shadow-lg">
+            <h1 class="pb-4">Visit our socials</h1>
+            <ul>
+              <li></li>
+            </ul>
           </div>
-          <div>
-            Links
+          <div class="relative p-8 sm:p-12 shadow-lg">
+            <ul>
+              <li class="mb-4">Home</li>
+              <li class="mb-4">About Us</li>
+              <li class="mb-4">Coderafiki</li>
+              <li>Join Us</li>
+            </ul>
           </div>
         </div>
-        <div class="bg-white text-black flex flex-col justify-center">
+        <div class="flex flex-col justify-center">
           <p class="text-center">copyright@2022</p>
         </div>
       </div>
