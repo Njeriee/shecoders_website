@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #home{
     background-image: linear-gradient(rgba(13, 43, 70, 0.9), rgba(13, 43, 70, 0.9)),url(/src/images/herobg.jpg);
     /* background-position:center ;
@@ -9,4 +14,12 @@
     background-size: cover;
     height: 850px; */
 
+}
+
+#about-nav{
+    background-color: rgba(13, 43, 70, 0.9);
+}
+
+#coderafiki-nav{
+    background-color: rgba(13, 43, 70, 0.9);   
 }
