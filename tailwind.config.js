@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       backgroundImage:{
         'hero-bg':"url('/src/images/herobg.jpg')"
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat']
       }
     },
   },

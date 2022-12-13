@@ -8,16 +8,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0"
     />
-    <script
-      src="https://kit.fontawesome.com/6eac91cd63.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6eac91cd63.js" crossorigin="anonymous"></script>
     <link href="/dist/output.css" rel="stylesheet" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>home</title>
   </head>
-  <body>
+  <body class="font-montserrat">
     <section id="home" class="md:h-screen bg-center bg-cover">
       <!-- <nav class="flex">
         <div id="logo" class="flex flex-col justify-center px-28">
@@ -43,7 +41,7 @@
               alt="shecoders logo"
             />
           </span>
-          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <span class="text-3xl text-lime-400 cursor-pointer mx-2 md:hidden block">
             <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
           </span>
         </div>
@@ -69,7 +67,7 @@
         </ul>
       </nav>
       <div
-        class="bg-center bg-cover h-96 py-10 md:h-screen flex flex-col justify-center"
+        class="bg-center bg-cover h-96 md:my-44 flex flex-col justify-center"
       >
         <div class="text-white flex flex-col justify-center">
           <div class="my-8">
@@ -84,7 +82,7 @@
           <button
             class="text-center font-semibold md:text-xl border border-lime-400 hover:bg-lime-400 rounded-full m-auto md:p-4 p-2 justify-center"
           >
-            Discover us
+            <a href="/src/about.html">Discover us</a>
           </button>
         </div>
       </div>
@@ -124,16 +122,16 @@
             </p>
           </div>
         </div>
-        <div class="flex md:flex-row py-10 pt-20 px-40 justify-center">
+        <div class="flex flex-col md:flex-row md:py-10 md:pt-20 md:px-40 justify-center">
           <div class="basis-1/2 flex flex-col px-10 justify-center">
-            <h1 class="font-bold text-5xl py-10 text-lime-400 leading-snug">
+            <h1 class="font-bold text-3xl md:text-5xl py-10 text-lime-400 leading-snug">
               We connect and offer coding lessons to young students
             </h1>
             <p class="text-2xl pb-5">
               We believe in our next generation to carry on and contribute to
               towards the
             </p>
-            <p class="leading-loose">
+            <p class="leading-loose text-sm md:text-lg ">
               Our program coderafiki aims at at forming a network of after
               school clubs made up of a partnership between students, volunteer
               high skilled developers and schools. The aim of this project is to
@@ -149,21 +147,21 @@
             />
           </div>
         </div>
-        <div class="py-10 flex flex-col justify-center">
+        <div class="md:py-10 flex flex-col justify-center">
           <button
             class="text-center font-semibold md:text-xl border bg-lime-400 text-white rounded-full m-auto md:p-4 p-2 justify-center"
           >
-            Learn more
+            <a href="/src/coderafiki.html">Learn More</a>
           </button>
         </div>
       </div>
     </section>
     <section
       id="section_two"
-      class="h-100 flex flex-col px-40 pt-28 bg-blue-50 text-xl"
+      class="h-100 px-4 flex flex-col md:px-40 md:pt-28 bg-blue-50 text-xl"
     >
-      <div class="flex flex-row">
-        <div class="basis-1/2 flex flex-col pr-5">
+      <div class="flex flex-col md:flex-row">
+        <div class="basis-1/2 flex md:flex-col md:pr-5">
           <div class="pt-10">
             <img
               class=""
@@ -178,15 +176,15 @@
         </div>
         <div class="basis-1/2 flex flex-col">
           <div class="">
-            <h1 class="text-5xl text-lime-400 font-bold">
+            <h1 class="md:text-5xl font-semibold  text-3xl text-lime-400 md:font-bold">
               How we are making <br />
               a diffrence
             </h1>
-            <p class="text-2xl py-4">
+            <p class="md:text-2xl py-4">
               Kenya and Africa are in need for knowledge and awareness about the
               importance of IT and most importantly coding.
             </p>
-            <p class="pt-10 leading-loose">
+            <p class="pt-10 text-sm md:text-lg leading-loose">
               A very small population in the continent is equipped with
               knowledge of coding and emerging technologies such as web3,
               blockchain, Artificial Intelligence and Virtual Reality work.Our
@@ -257,33 +255,33 @@
           </div>
         </div>
       </div> -->
-      <div class="flex flex-col justify-center text-xl">
+      <div class="flex flex-col justify-center md:text-xl">
         <div class="py-10">
-          <h1 class="text-center text-5xl font-bold text-black">
+          <h1 class="text-center text-3xl md:text-5xl font-bold text-black">
             Shecoders by the numbers
           </h1>
         </div>
-        <div class="grid grid-cols-4 gap-2 p-14">
-          <div class="flex flex-col justify-center border-r-2 mx-4">
-            <h1 class="text-7xl font-bold text-center text-lime-400">150+</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:p-14">
+          <div class="flex flex-col justify-center border-r-2 md:mx-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">150+</h1>
             <p class="text-center py-4">Schools targeted</p>
           </div>
-          <div class="flex flex-col justify-center border-r-2">
-            <h1 class="text-7xl font-bold text-center text-lime-400">10K+</h1>
+          <div class="flex flex-col justify-center md:border-r-2">
+            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">10K+</h1>
             <p class="text-center py-4">
               students to be taught how to <br />
               code
             </p>
           </div>
           <div class="flex flex-col justify-center border-r-2">
-            <h1 class="text-7xl font-bold text-center text-lime-400">$1 M+</h1>
+            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">$1 M+</h1>
             <p class="text-center py-4">
               Funds to be raised for <br />
               the course
             </p>
           </div>
           <div>
-            <h1 class="text-7xl font-bold text-center text-lime-400">100+</h1>
+            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">100+</h1>
             <p class="text-center py-4">
               Volunteer developers <br />
               needed
@@ -308,12 +306,12 @@
         </div>
       </div> -->
       <!-- This is an example component -->
-      <div class="flex flex-row h-full">
-        <div class="basis-1/2 px-40">
-          <h1 class="text-4xl font-bold text-lime-400 py-5">
+      <div class="flex flex-col px-4 md:flex-row h-full">
+        <div class="basis-1/2 md:px-40">
+          <h1 class="text-2xl md:text-4xl font-bold text-lime-400 py-5">
             Be an empowered developer
           </h1>
-          <p class="pb-10 text-xl leading-loose">
+          <p class="pb-10 md:text-xl leading-loose">
             Join a community of like minded individuals set to transform the
             community through code and help Africa attain the goal of 10 million
             plus developers
@@ -321,7 +319,7 @@
         </div>
         <div class="basis-1/2 text-white">
           <div
-            class="w-96 h-full rounded-3xl flex flex-col justify-center"
+            class="md:w-96  h-full  rounded-3xl flex flex-col justify-center"
             id="home"
           >
             <p class="text-xl pl-24 pt-20">
@@ -338,7 +336,7 @@
     </section>
     <footer class="bg-slate-800 text-white">
       <div class="flex flex-col">
-        <div class="grid grid-cols-4">
+        <div class="grid grid-cols-2 md:grid-cols-4">
           <div class="relative p-8 sm:p-12 shadow-lg">
             <img
               class="h-32 justify-center"
@@ -389,7 +387,7 @@
           </div>
           <div class="relative p-8 sm:p-12 shadow-lg">
             <h1 class="pb-4">Visit our socials</h1>
-            <ul class="">
+            <ul class="leading-loose">
               <li>
                 <i class="fa-brands fa-linkedin px-4 text-2xl"></i>linkedin
               </li>

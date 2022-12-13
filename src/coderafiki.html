@@ -6,47 +6,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
         <link href="/dist/output.css" rel="stylesheet" />
-        <script src="../path/to/flowbite/dist/flowbite.js"></script>
+        <script src="https://kit.fontawesome.com/6eac91cd63.js"crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/6eac91cd63.js" crossorigin="anonymous"></script>
+        <script src="/src/javascript.js"></script>
         <title>coderafiki</title>
         </head>
     <body>
-        <section class="py-10 text-lime-400" id="coderafiki-nav">
-            <nav>nav here</nav>
+        <section class="text-lime-400" id="coderafiki-nav">
+            <nav class="mx-4 md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center">
+                  <span class="md:mx-4">
+                    <img
+                      class="h-32 md:mx-4"
+                      src="/src/images/cropped-output-onlinepngtools-2048x1745.png"
+                      alt="shecoders logo"
+                    />
+                  </span>
+                  <span class="text-3xl text-lime-400 cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                  </span>
+                </div>
+                <ul
+                  class="md:flex md:mr-28 md:text-white md:text-xl md:items-center z-[-1] md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+                >
+                  <li class="mx-4 my-6 md:my-0">
+                    <a class="hover:text-lime-500 hover:border-bottom hover:border-2" href="/src/home.html">Home</a>
+                  </li>
+                  <li class="mx-4 my-6 md:my-0">
+                    <a class="hover:text-lime-500" href="/src/about.html">About Us</a>
+                  </li>
+                  <li class="mx-4 my-6 md:my-0">
+                    <a class="hover:text-lime-500" href="/src/coderafiki.html"
+                      >Coderafiki</a
+                    >
+                  </li>
+                  <button
+                    class="bg-lime-400 text-white px-6 py-2 hover:bg-transparent hover:text-lime-400 hover:border-2 hover:border-lime-400 rounded-3xl"
+                  >
+                    Join Us
+                  </button>
+                </ul>
+              </nav>
         </section>
         <section class="p-10 bg-blue-50" id="coderafiki-hero">
             <h1 class="text-2xl">Coderafiki initiative</h1>
         </section>
-        <section class="px-10 py-10 flex flex-row">
-            <div class="basis-1/2 pl-24 ml-10">
+        <section class="px-10 py-10 flex flex-col md:flex-row">
+            <div class="basis-1/2 md:pl-24 md:ml-10">
                 <img class="h-96" src="images/gallery2.jpeg" alt="">
             </div>
             <div class="basis-1/2">
-                <p class="text-xl leading-loose">
+                <p class="py-2 md:text-xl leading-loose">
                     Coderafiki initiative is a an afterschool program designed to 
                     teach school going children at the primary and highschool level 
                     how to code. The projects focuses on traning the students on key aspects
                     used when coding such as problem solving, creativity , team work and
                     attention to detail.At the advanced levels students get learn advanced concepts such as
-                    <ul class="text-xl leading-loose">
-                        <li>Web3 development</li>
-                        <li>Blockchain development</li>
-                        <li>Airtifical Intelligence</li>
-                        <li>Virtual reality</li>
-                        <li>Game development</li>
+                    <ul class="md:text-xl leading-loose">
+                        <li><i class="fa-solid fa-check mx-4 text-lime-400"></i>Web3 development</li>
+                        <li><i class="fa-solid fa-check mx-4 text-lime-400"></i>Blockchain development</li>
+                        <li><li><i class="fa-solid fa-check mx-4 text-lime-400"></i>Airtifical Intelligence</li>
+                        <li><li><i class="fa-solid fa-check mx-4 text-lime-400"></i>Virtual reality</li>
+                        <li><li><i class="fa-solid fa-check mx-4 text-lime-400"></i>Game development</li>
                     </ul>
                 </p>
             </div>
         </section>
-        <section class="bg-blue-50 py-10  pl-24 px-20 flex flex-col justify-center">
+        <section class="bg-blue-50 py-10  md:pl-24 md:px-20 flex flex-col justify-center">
             <div>
-                <h1 class="text-3xl font-bold text-center py-5">Why coderafiki</h1>
+                <h1 class="text-3xl font-bold text-center py-5 text-lime-400">Why coderafiki</h1>
             </div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid md:grid-cols-2 md:gap-4">
                 <div class="flex flex-col px-10 py-5">
                     <div>
-                        <img class="h-80 w-fit" src="/src/images/missionbg.jpg" alt="">
+                        <img class="h-80 md:w-9/12" src="/src/images/gallery1.jpeg" alt="">
                     </div>
-                    <div class="px-4 py-10 mx-20 -mt-10 bg-white rounded-xl">
+                    <div class="px-4 py-10 md:mx-20 -mt-10 bg-white rounded-xl">
                         <h1 class="text-center text-xl font-bold py-4">Our Mission</h1>
                     <p class="leading-loose">
                         Our main objective is to impart basic knowledge of how 
@@ -59,7 +96,7 @@
                     <div>
                         <img class="h-80 w-fit" src="/src/images/aimbg.jpg" alt="">
                     </div>
-                    <div class="px-4 py-10 mx-20 -mt-10 bg-white rounded-xl">
+                    <div class="px-4 py-10 md:mx-20 -mt-10 bg-white rounded-xl">
                         <h1 class="text-center text-xl font-bold py-4">Our aim</h1>
                         <p class="leading-loose">
                             Our main objective is to impart basic knowledge of how 
@@ -70,14 +107,14 @@
                 </div>
                 <div class="flex flex-col px-10 py-5">
                     <div>
-                        <img class="h-80 w-fit" src="/src/images/objectivesbg.jpg" alt="">
+                        <img class="h-80 md:w-9/12" src="/src/images/gallery2.jpeg" alt="">
                     </div>
-                    <div class="px-4 py-10 mx-20 -mt-10 bg-white rounded-xl">
+                    <div class="px-4 py-10 md:mx-20 -mt-10 bg-white rounded-xl">
                         <h1 class="text-center text-xl font-bold py-4">Our objectives</h1>
                         <ul class="leading-loose">
-                            <li>To create a trend of curiosity for computer programming and careers available in the IT space</li>
-                            <li>To collaborate with schools in order to form after school coding clubs.</li>
-                            <li>To offer quality guidance and mentorship to students interested in learning how to code</li>
+                            <li><i class="fa-regular fa-circle-check text-xl mx-4 text-lime-400"></i>To create a trend of curiosity for computer programming</li>
+                            <li><i class="fa-regular fa-circle-check text-xl mx-4 text-lime-400"></i>To collaborate with schools in order to form after school coding clubs.</li>
+                            <li><i class="fa-regular fa-circle-check text-xl mx-4 text-lime-400"></i>To offer quality guidance and mentorship to students</li>
                         </ul>
                     </div>
                 </div>
@@ -85,7 +122,7 @@
                     <div>
                         <img class="h-80 w-fit" src="/src/images/visionbg.jpg" alt="">
                     </div>
-                    <div class="px-4 py-10 mx-20 -mt-10 bg-white rounded-xl">
+                    <div class="px-4 py-10 md:mx-20 -mt-10 bg-white rounded-xl">
                         <h1 class="text-center text-xl font-bold py-4">Our vision</h1>
                         <p class="leading-loose">
                             Our main objective is to impart basic knowledge of how 
@@ -110,116 +147,82 @@
                 </p> -->
             </div>
         </section>
-        <section>
+        <section class="hidden">
             <h1>Gallery</h1>
         </section>
         <footer class="bg-slate-800 text-white">
             <div class="flex flex-col">
-              <div class="grid grid-cols-4">
+              <div class="grid grid-cols-2 md:grid-cols-4">
                 <div class="relative p-8 sm:p-12 shadow-lg">
-                  <img class="h-32 justify-center" src="/src/images/cropped-output-onlinepngtools-2048x1745.png" alt="">
+                  <img
+                    class="h-32 justify-center"
+                    src="/src/images/cropped-output-onlinepngtools-2048x1745.png"
+                    alt=""
+                  />
                 </div>
-                <div class=" relative rounded-lg p-8 sm:p-12 shadow-lg">
+                <div class="relative rounded-lg p-8 sm:p-12 shadow-lg">
                   <h1 class="pb-4">Contact us</h1>
                   <form>
                     <div class="mb-6">
-                       <input
-                          type="text"
-                          placeholder="Your Name"
-                          class="
-                          w-full
-                          rounded
-                          py-3
-                          px-[14px]
-                          text-body-color text-base
-                          border border-[f0f0f0]
-                          outline-none
-                          focus-visible:shadow-none
-                          focus:border-primary
-                          "
-                          />
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        class="w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary"
+                      />
                     </div>
                     <div class="mb-6">
-                       <input
-                          type="email"
-                          placeholder="Your Email"
-                          class="
-                          w-full
-                          rounded
-                          py-3
-                          px-[14px]
-                          text-body-color text-base
-                          border border-[f0f0f0]
-                          outline-none
-                          focus-visible:shadow-none
-                          focus:border-primary
-                          "
-                          />
+                      <input
+                        type="email"
+                        placeholder="Your Email"
+                        class="w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary"
+                      />
                     </div>
                     <div class="mb-6">
-                       <input
-                          type="text"
-                          placeholder="Your Phone"
-                          class="
-                          w-full
-                          rounded
-                          py-3
-                          px-[14px]
-                          text-body-color text-base
-                          border border-[f0f0f0]
-                          outline-none
-                          focus-visible:shadow-none
-                          focus:border-primary
-                          "
-                          />
+                      <input
+                        type="text"
+                        placeholder="Your Phone"
+                        class="w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary"
+                      />
                     </div>
                     <div class="mb-6">
-                       <textarea
-                          rows="6"
-                          placeholder="Your Message"
-                          class="
-                          w-full
-                          rounded
-                          py-3
-                          px-[14px]
-                          text-body-color text-base
-                          border border-[f0f0f0]
-                          resize-none
-                          outline-none
-                          focus-visible:shadow-none
-                          focus:border-primary
-                          "
-                          ></textarea>
+                      <textarea
+                        rows="6"
+                        placeholder="Your Message"
+                        class="w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] resize-none outline-none focus-visible:shadow-none focus:border-primary"
+                      ></textarea>
                     </div>
                     <div>
-                       <button
-                          type="submit"
-                          class="
-                          text-lime-400
-                          bg-primary
-                          rounded
-                          border border-primary
-                          p-3
-                          transition
-                          hover:bg-opacity-90
-                          "
-                          >
-                       Send Message
-                       </button>
+                      <button
+                        type="submit"
+                        class="text-lime-400 bg-primary rounded border border-primary p-3 transition hover:bg-opacity-90"
+                      >
+                        Send Message
+                      </button>
                     </div>
-                 </form>
+                  </form>
                 </div>
                 <div class="relative p-8 sm:p-12 shadow-lg">
                   <h1 class="pb-4">Visit our socials</h1>
-                  <ul>
-                    <li></li>
+                  <ul class="leading-loose">
+                    <li>
+                      <i class="fa-brands fa-linkedin px-4 text-2xl"></i>linkedin
+                    </li>
+                    <li><i class="fa-brands fa-twitter px-4 text-2xl"></i>twitter</li>
+                    <li>
+                      <i class="fa-brands fa-instagram px-4 text-2xl"></i>instagram
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-facebook px-4 text-2xl"></i>facebook
+                    </li>
                   </ul>
                 </div>
-                <div class="relative p-8 sm:p-12 shadow-lg">
+                <div class="relative flex p-8 sm:p-12 shadow-lg text-white">
                   <ul>
-                    <li class="mb-4">Home</li>
-                    <li class="mb-4">About Us</li>
-                    <li class="mb-4">Coderafiki</li>
+                    <li class="mb-4"><a href="/src/home.html">Home</a></li>
+                    <li class="mb-4"><a href="/src/about.html">About Us</a></li>
+                    <li class="mb-4">
+                      <a href="/src/coderafiki.html">Coderafiki</a>
+                    </li>
                     <li>Join Us</li>
                   </ul>
                 </div>
