@@ -11,59 +11,37 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6eac91cd63.js" crossorigin="anonymous"></script>
     <link href="/dist/output.css" rel="stylesheet" />
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>home</title>
   </head>
   <body class="font-montserrat">
     <section id="home" class="md:h-screen bg-center bg-cover">
-      <!-- <nav class="flex">
-        <div id="logo" class="flex flex-col justify-center px-28">
-          <img
-            class="h-20"
-            src="/src/images/cropped-output-onlinepngtools-2048x1745.png"
-            alt="shecoders logo"
-          />
+      <nav class="nav flex flex-wrap items-center justify-between px-4 md:px-10">
+        <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+          <img class="h-16 w-16 mr-2 md:h-32 md:w-36" src="/src/images/cropped-output-onlinepngtools-2048x1745.png" alt="">
+          <!-- <span class="text-lime-400 font-semibold text-xl tracking-tight">SheCoders</span> -->
         </div>
-        <div>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </nav> -->
-      <nav class="mx-4 md:flex md:items-center md:justify-between">
-        <div class="flex justify-between items-center">
-          <span class="md:mx-4">
-            <img
-              class="h-32 md:mx-4"
-              src="/src/images/cropped-output-onlinepngtools-2048x1745.png"
-              alt="shecoders logo"
-            />
-          </span>
-          <span class="text-3xl text-lime-400 cursor-pointer mx-2 md:hidden block">
-            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-          </span>
-        </div>
-        <ul
-          class="md:flex md:mr-28 md:text-white md:text-xl md:items-center z-[-1] md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
-        >
-          <li class="mx-4 my-6 md:my-0">
-            <a class="hover:text-lime-400 hover:border-b-2 active:text-lime-400" href="/src/home.html">Home</a>
+        <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+        <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+          <span class="navicon bg-grey-darkest flex items-center relative"></span>
+        </label>
+      
+        <ul class="menu text-white md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+          <li class="border-t md:border-none">
+            <a href="/" class="block md:inline-block px-4 py-3 md:text-xl hover:text-lime-400 active:text-lime-400 md:hover:border-b border-lime-400 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</a>
           </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a class="hover:text-lime-400 hover:border-b-2 active:text-lime-400" href="/src/about.html">About Us</a>
+          
+          <li class="border-t border-lime-400 md:border-none">
+            <a href="/src/about.html" class="block md:inline-block px-4 py-3 md:text-xl hover:text-lime-400 active:text-lime-400 md:hover:border-b border-lime-400 no-underline text-grey-darkest hover:text-grey-darker">About Us</a>
           </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a class="hover:text-lime-400 hover:border-b-2 active:text-lime-400" href="/src/coderafiki.html"
-              >Coderafiki</a
-            >
+          
+          <li class="border-t border-lime-400 md:border-none">
+            <a href="/src/coderafiki.html" class="block md:inline-block px-4 py-3 md:text-xl hover:text-lime-400 active:text-lime-400 md:hover:border-b border-lime-400 no-underline text-grey-darkest hover:text-grey-darker">Coderafiki</a>
           </li>
-          <button
-            class="bg-lime-400 text-white px-6 py-2 hover:bg-transparent hover:text-lime-400 hover:border-2 hover:border-lime-400 rounded-3xl"
-          >
-            Join Us
-          </button>
+          <div class="border-t border-lime-400 py-4 md:border-none">
+            <a class=" bg-lime-400 text-white px-6 py-2 hover:bg-transparent hover:text-lime-400 hover:border-2 hover:border-lime-400 rounded-3xl" href="https://forms.gle/6Lz6xe4xeis8VfFs7" target="_blank"> 
+              Join Us
+            </a> 
+          </div>
         </ul>
       </nav>
       <div
@@ -199,20 +177,6 @@
             </p>
           </div>
           <div class="text-xl flex flex-col">
-            <!-- <p class="py-5">
-              <span class="material-symbols-outlined inline-flex text-5xl text-lime-400">
-                approval_delegation
-              </span>Our aim is to reach every remote school in Kenya and establish after-school coding clubs
-            </p>
-            <p>
-              <span class="material-symbols-outlined text-5xl text-lime-400">
-                developer_mode
-              </span> Our focus is code.
-              Every child is eligible to learn how to 
-              code and acquire skills that will put them
-              at a competitive advantage in the IT
-              in future
-            </p> -->
             <p></p>
           </div>
           <div class="py-20 text-xl">
@@ -226,48 +190,19 @@
       </div>
     </section>
     <section id="section_three" class="p-10 bg-white">
-      <!-- <div class="flex flex-row">
-        <div class="">
-          <img class="h-full w-full" src="/src/images/section3pic.jpeg" alt="" />
-        </div>
-        <div>
-          <h1>A community based approach</h1>
-          <p>
-            Alia mucius ex nam, ea facer liber usu, e akiquam platontem est. Ut
-            melo cum comune similique in accusman noluisse accumsan
-          </p>
-          <div>
-            <i>community icon</i>
-            <p>
-              Alia mucius ex nam facer liber usu aliquam mucius platontem est.
-              Ut melo cum comune
-            </p>
-          </div>
-          <div>
-            <div>
-              <h1>2500</h1>
-              <p>Schools targeted</p>
-            </div>
-            <div>
-              Alia mucius ex nam, ea facer liber usu, e akiquam platontem est.
-              Ut melo cum comune similique in accusman noluisse accumsan
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="flex flex-col justify-center md:text-xl">
         <div class="py-10">
           <h1 class="text-center text-3xl md:text-5xl font-bold text-black">
-            Shecoders by the numbers
+            Our targets
           </h1>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:p-14">
           <div class="flex flex-col justify-center border-r-2 md:mx-4">
-            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">150+</h1>
+            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">150K+</h1>
             <p class="text-center py-4">Schools targeted</p>
           </div>
           <div class="flex flex-col justify-center md:border-r-2">
-            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">10K+</h1>
+            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">10M+</h1>
             <p class="text-center py-4">
               students to be taught how to <br />
               code
@@ -281,7 +216,7 @@
             </p>
           </div>
           <div>
-            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">100+</h1>
+            <h1 class="text-5xl md:text-7xl font-bold text-center text-lime-400">100K+</h1>
             <p class="text-center py-4">
               Volunteer developers <br />
               needed
@@ -291,21 +226,6 @@
       </div>
     </section>
     <section class="bg-blue-50 py-10 flex flex-col">
-      <!-- <div class="flex flex-col py-10">
-        <h1>Gallery</h1>
-        <div class="grid grid-cols-3">
-          <div class="">
-            <img class="h-96" src="src/images/section1pic.jpeg" alt="">
-          </div>
-          <div>
-            <img class="h-96" src="src/images/section1pic2.jpeg" alt="">
-          </div>
-          <div>
-            <img class="h-96" src="src/images/gallery3.jpeg" alt="">
-          </div>
-        </div>
-      </div> -->
-      <!-- This is an example component -->
       <div class="flex flex-col px-4 md:flex-row h-full">
         <div class="basis-1/2 md:px-40">
           <h1 class="text-2xl md:text-4xl font-bold text-lime-400 py-5">
@@ -325,11 +245,11 @@
             <p class="text-xl pl-24 pt-20">
               Become a <span class="text-lime-400">volunteer</span>
             </p>
-            <button
+            <a
               class="text-center my-10 bg-lime-400 text-white font-semibold md:text-xl border rounded-full m-auto md:p-4 p-2 justify-center"
-            >
+             href="https://forms.gle/6Lz6xe4xeis8VfFs7">
               Join Us
-            </button>
+          </a>
           </div>
         </div>
       </div>
@@ -339,12 +259,12 @@
         <div class="grid grid-cols-2 md:grid-cols-4">
           <div class="relative p-8 sm:p-12 shadow-lg">
             <img
-              class="h-32 justify-center"
+              class="h-16 w-16 md:h-32 md:w-36 justify-center"
               src="/src/images/cropped-output-onlinepngtools-2048x1745.png"
               alt=""
             />
           </div>
-          <div class="relative rounded-lg p-8 sm:p-12 shadow-lg">
+          <div class="relative rounded-lg p-8 col-span-9 md:col-auto sm:p-12 shadow-lg">
             <h1 class="pb-4">Contact us</h1>
             <form>
               <div class="mb-6">
@@ -385,29 +305,31 @@
               </div>
             </form>
           </div>
-          <div class="relative p-8 sm:p-12 shadow-lg">
+          <div class="relative p-8 md:p-12 shadow-lg">
             <h1 class="pb-4">Visit our socials</h1>
             <ul class="leading-loose">
               <li class="hover:text-lime-400">
-                <i class="fa-brands fa-linkedin px-4 text-2xl hover:text-lime-400"></i>linkedin
+                <i class="fa-brands fa-linkedin px-4 text-2xl hover:text-lime-400"></i><a href="https://www.linkedin.com/company/shecoders-kenya/about/" target="_blank">linkedin</a>
               </li>
-              <li class="hover:text-lime-400"><i class="fa-brands fa-twitter px-4 text-2xl hover:text-lime-400"></i>twitter</li>
+              <li class="hover:text-lime-400"><i class="fa-brands fa-twitter px-4 text-2xl hover:text-lime-400"></i><a href="https://twitter.com/shecoderske" target="_blank">twitter</a></li>
               <li class="hover:text-lime-400">
-                <i class="fa-brands fa-instagram px-4 text-2xl hover:text-lime-400"></i>instagram
+                <i class="fa-brands fa-instagram px-4 text-2xl hover:text-lime-400"></i> <a href="https://www.instagram.com/shecoderske/" target="_blank">instagram</a>
               </li>
               <li class="hover:text-lime-400">
-                <i class="fa-brands fa-facebook px-4 text-2xl hover:text-lime-400"></i>facebook
+                <i class="fa-brands fa-facebook px-4 text-2xl hover:text-lime-400"></i><a href="https://www.facebook.com/shecoderske/" target="_blank">facebook</a>
               </li>
             </ul>
           </div>
-          <div class="relative flex p-8 sm:p-12 shadow-lg text-white">
+          <div class="relative flex p-8 md:p-12 shadow-lg text-white">
             <ul>
-              <li class="mb-4"><a class="hover:text-lime-400 hover:border-b-2 active:text-lime-400" href="/src/home.html">Home</a></li>
+              <li class="mb-4"><a class="hover:text-lime-400 hover:border-b-2 active:text-lime-400" href="/">Home</a></li>
               <li class="mb-4"><a class="hover:text-lime-400 hover:border-b-2 active:text-lime-400" href="/src/about.html">About Us</a></li>
               <li class="mb-4">
                 <a class="hover:text-lime-400 hover:border-b-2 active:text-lime-400" href="/src/coderafiki.html">Coderafiki</a>
               </li>
-              <li class="hover:text-lime-400 hover:border-b-2 active:text-lime-400">Join Us</li>
+              <li class="mb-4">
+                <a class="hover:text-lime-400 hover:border-b-2 active:text-lime-400" href="https://forms.gle/6Lz6xe4xeis8VfFs7" target="_blank">Join Us</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -417,5 +339,4 @@
       </div>
     </footer>
   </body>
-  <script src="/src/javascript.js"></script>
 </html>
